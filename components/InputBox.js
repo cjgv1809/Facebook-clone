@@ -97,7 +97,7 @@ function InputBox() {
             placeholder={`What's on your mind, ${
               session.user.name.split(" ")[0]
             }?`}
-            className="rounded-full h-12 bg-gray-100 flex-grow px-4 focus:outline-none"
+            className="text-xs sm:text-sm rounded-full h-12 bg-gray-100 flex-grow px-4 focus:outline-none"
             ref={inputRef}
           />
           <button hidden type="submit" onClick={sendPost}>
@@ -118,10 +118,12 @@ function InputBox() {
         )}
       </div>
 
-      <div className="flex justify-evenly p-3 border-t">
+      <div className="flex justify-evenly p-2 border-t px-4">
         <div className="inputIcon">
           <VideoCameraIcon className="h-7 text-red-500" />
-          <p className="text-xs sm:text-sm xl:text-base">Live Video</p>
+          <p className="hidden sm:inline-flex sm:text-xs md:text-sm lg:text-md">
+            Live Video
+          </p>
         </div>
 
         <div
@@ -129,7 +131,9 @@ function InputBox() {
           onClick={() => filepickerRef.current.click()}
         >
           <CameraIcon className="h-7 text-green-400" />
-          <p className="text-xs sm:text-sm xl:text-base">Photo/Video</p>
+          <p className="hidden sm:inline-flex sm:text-xs md:text-sm lg:text-md">
+            Photo/Video
+          </p>
           <input
             ref={filepickerRef}
             type="file"
@@ -140,7 +144,9 @@ function InputBox() {
 
         <div className="inputIcon">
           <EmojiHappyIcon className="h-7 text-yellow-300" />
-          <p className="text-xs sm:text-sm xl:text-base">Feeling/Activity</p>
+          <p className="hidden sm:inline-flex sm:text-xs md:text-sm lg:text-md">
+            Feeling/Activity
+          </p>
         </div>
       </div>
     </div>
