@@ -7,6 +7,7 @@ module.exports = {
       "static.footballtransfers.com",
       "i2.wp.com",
       "c.files.bbci.co.uk",
+      "cdn.businessinsider.es",
     ],
   },
 };

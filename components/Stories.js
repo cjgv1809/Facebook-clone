@@ -15,7 +15,8 @@ const stories = [
   {
     name: "Jeff Bezos",
     src: "https://links.papareact.com/k2j",
-    profile: "https://links.papareact.com/f0p",
+    profile:
+      "https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2018/01/jeff-bezos-ceo-amazon.jpg?tf=3840x",
   },
   {
     name: "Mark Zuckerberg",
@@ -31,7 +32,7 @@ const stories = [
 
 function Stories() {
   return (
-    <div className="flex justify-center space-x-3 mx-auto">
+    <div className="flex justify-center mx-auto space-x-3">
       {stories.map((story) => (
         <StoryCard
           key={story.src}
