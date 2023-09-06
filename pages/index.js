@@ -8,7 +8,6 @@ import Widgets from "../components/Widgets";
 import { db } from "../firebase";
 
 export default function Home({ session, posts }) {
-  console.log("session", session);
   if (!session) return <Login />;
 
   return (
