@@ -5,7 +5,7 @@ const stories = [
     name: "Daniel Ek",
     src: "https://static.footballtransfers.com/images/cn/image/upload/q_90,w_1200,h_800,ar_3.2/footballcritic/hjy2jteoe0s60affn3to",
     profile:
-      "https://i2.wp.com/executives.technology/wp-content/uploads/2019/12/danielek.jpg?fit=400%2C400&ssl=1",
+      "https://emprendedor.com/wp-content/uploads/2022/10/daniel-ek-ceo-spotify.jpg",
   },
   {
     name: "Elon Musk",
