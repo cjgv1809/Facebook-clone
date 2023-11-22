@@ -6,7 +6,7 @@ import {
   HomeIcon,
   UserGroupIcon,
   ViewGridIcon,
-} from "@heroicons/react/solid";
+  } from "@heroicons/react/solid";
 import {
   PlayIcon,
   FlagIcon,
@@ -50,7 +50,7 @@ function Header() {
 
       <div className="flex items-center sm:space-x-2 justify-end">
         <Image
-          src={session.user.image}
+          src={session?.user?.image}
           height={40}
           width={40}
           layout="fixed"
@@ -58,7 +58,10 @@ function Header() {
           className="rounded-full cursor-pointer"
           title="Click to sign out"
         />
-        <p className="hidden lg:inline-flex font-semibold pr-3 whitespace-nowrap">
+        <p
+          className="hidden lg:inline-flex font-semibold pr-3 whitespace-nowrap cursor-pointer"
+          title="Click to sign out"
+        >
           {session.user.name}
         </p>
         <ViewGridIcon className="icon" />

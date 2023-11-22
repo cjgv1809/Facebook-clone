@@ -17,8 +17,6 @@ function Sidebar() {
 
   return (
     <div className="hidden sm:flex sm:flex-col p-2 mt-5 max-w-[600px] xl:min-w-[300px]">
-      <SidebarRow src={session.user.image} title={session.user.name} />
-
       <SidebarRow Icon={UsersIcon} title="Friends" />
       <SidebarRow Icon={UserGroupIcon} title="Groups" />
       <SidebarRow Icon={ShoppingBagIcon} title="Marketplace" />
@@ -26,6 +24,7 @@ function Sidebar() {
       <SidebarRow Icon={CalendarIcon} title="Events" />
       <SidebarRow Icon={ClockIcon} title="Memories" />
       <SidebarRow Icon={ChevronDownIcon} title="See More" />
+      <SidebarRow src={session.user.image} title="Sign out" />
     </div>
   );
 }

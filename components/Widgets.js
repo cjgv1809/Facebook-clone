@@ -14,7 +14,7 @@ const contacts = [
   { src: "https://links.papareact.com/zvy", name: "Bill Gates" },
   { src: "https://links.papareact.com/snf", name: "Mark Zuckerberg" },
   {
-    src: "https://i2.wp.com/executives.technology/wp-content/uploads/2019/12/danielek.jpg?fit=400%2C400&ssl=1",
+    src: "https://emprendedor.com/wp-content/uploads/2022/10/daniel-ek-ceo-spotify.jpg",
     name: "Daniel Ek",
   },
   {
